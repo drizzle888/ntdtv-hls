@@ -12,4 +12,6 @@
 
 执行 hls.sh 脚本，让其一直在后台运行（可将脚本注册为系统服务），并保证运行 Web服务器的操作系统用户对同步到本地的文件及目录有可读权限。
 
-http://<server-ip>:<server-port>/ntdtvcn/playlist.m3u8 即为新的直播源
+直播源地址的格式为 `http://服务器IP:服务器端口/ntdtvcn/playlist.m3u8`，如服务器IP为207.148.103.66，服务器端口为80，则直播源地址为 `http://207.148.103.66:80/ntdtvcn/playlist.m3u8`
+
+前端页面可以使用 video.js 库播放此 hls 视频, 可参考 [index.html](pages/index.html) 页面
