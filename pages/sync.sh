@@ -14,7 +14,6 @@ while : ; do
 
 	# download m3u8 and media 
 	wget -q $baseUrl/$m3u8 -O $m3u8.new
-	cp $m3u8.new $m3u8
 	for frag in $(grep ^media $m3u8); do
 		if [ -f $frag ]; then
 			#echo "skipping $frag ..."
@@ -23,6 +22,7 @@ while : ; do
 		echo "getting  $frag ..."
 		wget -q $baseUrl/$frag -O $frag 
 	done
+	cp $m3u8.new $m3u8
 
 	# remove old frags
 	for oldFrag in $(ls -t media* | sed '1,20d'); do
@@ -30,8 +30,8 @@ while : ; do
 		rm $oldFrag
 	done
 	
-	# wait for 2 sec	
-	sleep 2	
+	# wait for 1 sec	
+	sleep 1	
 done
 
 ## HLS url:
