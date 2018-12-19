@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# ntdtv-hls Startup script for ntdtv-hls
+#
+# chkconfig: - 85 15
+#
+# description: ntdtv-hls is used for synchronizing HLS source from NTDTV
+#
+
+webRoot=/usr/share/nginx/html
+prog=$webRoot/sync.sh
+log=$webRoot/sync.log
+
+start() {
+	echo "Starting ntdtv-hls ..."
+	bash $prog > $log &
+}
+
+stop() {
+	echo "Stopping ntdtv-hls ..."
+	pid=$(ps aux | grep $prog | grep -v grep | awk '{print $2}')
+	if [ -n $pid ]; then
+		kill -9 $pid
+	fi
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+		stop
+		start
+		;;
+	*)
+		echo "Usage: service ntdtv-hls {start|stop|restart}"
+esac
+	

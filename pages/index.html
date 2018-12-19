@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>新唐人电视直播 - 中国频道</title>
+<meta charset="UTF-8">
+<script src="https://unpkg.com/video.js@6.7.3/dist/video.min.js"></script>
+<script src="https://unpkg.com/videojs-contrib-hls@5.14.1/dist/videojs-contrib-hls.min.js"></script>
+<link rel='stylesheet' id='videojs-css' href='https://unpkg.com/video.js@6.7.3/dist/video-js.min.css' type='text/css' media='all' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style>
+h4 {
+	margin-top: 20px;
+}
+#player {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 100%;
+	max-width: 640px;
+	height: 360px;
+}
+@media (max-width : 700px) {
+	#player {
+		height: 220px;
+	}
+}
+</style>
+</head>
+<body>
+<h4><center>新唐人电视直播 - 中国频道</center></h4>
+<center>
+<video id=player height="360px" width="640px" class="video-js vjs-default-skin vjs-big-play-centered" controls autoplay preload="auto" poster="/ntdtv.jpg">
+  <source
+     src="http://local_server_ip/ntdtvcn/playlist.m3u8"
+     type="application/x-mpegURL">
+</video>
+<script type="text/javascript">
+    var player = videojs('player');
+    player.play();
+</script>
+<p>
+<a href="https://github.com/gfw-breaker/nogfw/blob/master/README.md" target="_blank"><b> 一键翻墙软件</b></a>&nbsp;&nbsp;
+<a href="http://local_server_ip:10080" target="_blank"><b>大纪元新闻网</b></a>&nbsp;&nbsp;
+<a href="http://local_server_ip:8000" target="_blank"><b>新唐人电视台</b></a>&nbsp;&nbsp;
+<a href="https://github.com/oGate2/oGate/blob/master/README.md" target="_blank"><b>网门</b></a>&nbsp;&nbsp;
+<a href="http://local_server_ip:8000/gb/schedule" target="_blank"><b>电视节目表</b></a>&nbsp;&nbsp;
+<br/><br/>
+<a href="http://local_server_ip:10000/videos/world"><b>法轮大法洪传世界</b></a>&nbsp;&nbsp;
+<a href="http://local_server_ip:10000/videos/blog/weihuo.html"><b>天安门自焚真相</b></a>&nbsp;&nbsp;
+<a href="http://local_server_ip:10000/videos/blog/425event.html"><b>4.25中南海万人上访始末</b></a>&nbsp;&nbsp;
+<a href="http://local_server_ip:10000/videos/blog/jiexi1400.html"><b>所谓"1400例"</b></a>&nbsp;&nbsp;
+<br/><br/>
+<a href="http://local_server_ip:10000/videos/bnhh"><b>《百年红祸》</b></a>&nbsp;
+<a href="http://local_server_ip:10000/videos/jiuping"><b>《九评共产党》</b></a>&nbsp;
+<a href="http://local_server_ip:10000/videos/mtdwh"><b>《漫谈党文化》</b></a>&nbsp;
+<a href="http://local_server_ip:10000/videos/legend"><b>《传奇时代》</b></a>&nbsp;
+<a href="http://local_server_ip:10000/videos/fytdx"><b>《风雨天地行》</b></a>&nbsp;&nbsp;
+<br/><br/>
+<a href="https://github.com/gfw-breaker/wenzhao/blob/master/README.md"><b>《文昭谈古论今》</b></a>&nbsp;
+<a href="https://github.com/gfw-breaker/ntdtv-comedy/blob/master/README.md"><b>《大陆新闻解读》</b></a>&nbsp;
+<a href="https://github.com/gfw-breaker/ntdtv-news/blob/master/README.md"><b>《中国禁闻》</b></a>&nbsp;
+<a href="https://github.com/gfw-breaker/today-in-history/blob/master/README.md"><b>《历史上的今天》</b></a>&nbsp;&nbsp;
+<br/><br/>
+</p>
+</center>
+</body>
+</html>
+
