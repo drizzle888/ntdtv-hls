@@ -11,5 +11,5 @@ cp pages/* $webRoot
 # enable ntdtv-hls service
 cp ntdtv-hls /etc/init.d
 chkconfig ntdtv-hls on
-
+service ntdtv-hls start
 
