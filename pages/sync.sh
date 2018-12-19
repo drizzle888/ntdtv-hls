@@ -25,7 +25,7 @@ while : ; do
 	done
 
 	# remove old frags
-	for oldFrag in $(ls -t media* | sed '1,1800d'); do
+	for oldFrag in $(ls -t media* | sed '1,20d'); do
 		echo "removing $oldFrag ..."
 		rm $oldFrag
 	done
