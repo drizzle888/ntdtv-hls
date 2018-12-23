@@ -1,5 +1,6 @@
 #!/bin/bash
 # author: gfw-breaker
+# desc:	deploy ntdtv-hls service
 
 webRoot=/usr/share/nginx/html
 

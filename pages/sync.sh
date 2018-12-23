@@ -1,5 +1,6 @@
 #!/bin/bash
 # author: gfw-breaker
+# desc:	synchronize HLS media to local server
 
 webRoot=/usr/share/nginx/html
 baseUrl=http://cnhls.ntdtv.com/cn/live800
